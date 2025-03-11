@@ -30,8 +30,8 @@ import HugeIconsFolder from '@/components/elements/hugeicons/Folder';
 import HugeIconsHome from '@/components/elements/hugeicons/Home';
 import HugeIconsPencil from '@/components/elements/hugeicons/Pencil';
 import HugeIconsPeople from '@/components/elements/hugeicons/People';
-import { HugeiconsIcon } from '@hugeicons/react';
-import { QuestionIcon } from '@hugeicons-pro/core-solid-standard';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCircleInfo } from '@fortawesome/free-solid-svg-icons';
 import ConflictStateRenderer from '@/components/server/ConflictStateRenderer';
 import InstallListener from '@/components/server/InstallListener';
 import TransferListener from '@/components/server/TransferListener';
@@ -426,7 +426,7 @@ export default () => {
                                 to={`https://craftcore.jsemolik.dev/support`}
                                 end
                             >
-                                <HugeiconsIcon icon={QuestionIcon} fill='currentColor'/>
+                                <FontAwesomeIcon icon={faCircleInfo} color='currentColor'/>
                                 <p>Support</p>
                             </NavLink>
                     </MainSidebar>
